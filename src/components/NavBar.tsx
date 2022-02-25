@@ -6,7 +6,7 @@ export default function NavBar() {
     <>
       <Navbar bg="primary" expand="lg" variant="dark">
         <Container fluid>
-          <Navbar.Brand href="#home">AGRIVENDA</Navbar.Brand>
+          <Navbar.Brand href="#home">AGRIVEND</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
