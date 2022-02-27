@@ -4,21 +4,25 @@ import Carrot from "../../assets/images/carrot.png";
 import Prune from "../../assets/images/prune.png";
 import Inspect from "../../assets/images/inspect.png";
 import Sell from "../../assets/images/sell.png";
+import { Link } from "react-router-dom";
 
 const details = [
   {
+    link: "/about",
     title: "Pruning Plants",
     week: "1 week",
     description: "Prune Correctly",
     img: Prune,
   },
   {
+    link: "/inspect",
     title: "Inspection",
     week: "2 weeks",
     description: "Prune Correctly",
     img: Inspect,
   },
   {
+    link: "/about",
     title: "Sell",
     week: "3 weeks",
     description: "Fast Growth",
@@ -65,21 +69,29 @@ export default function Monitoring() {
               details.map((items, index) => {
                 return (
                   <div key={index} className="card bg-dull border-0 m-3">
-                    <div className="card-body d-flex align-items-center justify-content-between">
-                      <div>
-                        <h4 className="card-title fw-bolder">{items.title}</h4>
-                        <h6 className="card-subtitle mb-2">{items.week}</h6>
-                        <p className="card-text text-muted">
-                          {items.description}
-                        </p>
+                    <Link
+                      to={items.link}
+                      className="text-dark"
+                      style={{ textDecoration: "none" }}
+                    >
+                      <div className="card-body d-flex align-items-center justify-content-between">
+                        <div>
+                          <h4 className="card-title fw-bolder">
+                            {items.title}
+                          </h4>
+                          <h6 className="card-subtitle mb-2">{items.week}</h6>
+                          <p className="card-text text-muted">
+                            {items.description}
+                          </p>
+                        </div>
+                        <img
+                          src={items.img}
+                          className="img-fluid"
+                          style={{ height: "75px", width: "75px" }}
+                          alt="prune"
+                        />
                       </div>
-                      <img
-                        src={items.img}
-                        className="img-fluid"
-                        style={{ height: "75px", width: "75px" }}
-                        alt="prune"
-                      />
-                    </div>
+                    </Link>
                   </div>
                 );
               })}
