@@ -4,21 +4,25 @@ import Carrot from "../../assets/images/carrot.png";
 import Prune from "../../assets/images/prune.png";
 import Inspect from "../../assets/images/inspect.png";
 import Sell from "../../assets/images/sell.png";
+import { Link } from "react-router-dom";
 
 const details = [
   {
+    link: "/about",
     title: "Pruning Plants",
     week: "1 week",
     description: "Prune Correctly",
     img: Prune,
   },
   {
+    link: "/inspect",
     title: "Inspection",
     week: "2 weeks",
     description: "Prune Correctly",
     img: Inspect,
   },
   {
+    link: "/about",
     title: "Sell",
     week: "3 weeks",
     description: "Fast Growth",
@@ -34,8 +38,8 @@ export default function Monitoring() {
           Take care of the plants according to our plan and you will see the
           result!
         </p>
-        <div className="row">
-          <div className="col-md-4 mt-4">
+        <div className="row mt-4">
+          <div className="col-md-5">
             <h3
               className="fw-bold px-2 text-primary mb-2"
               style={{ letterSpacing: "0.2rem" }}
@@ -44,7 +48,7 @@ export default function Monitoring() {
             </h3>
             <img
               src={Carrot}
-              className="img-fluid w-md-75 w-100 h-md-50 h-auto p-2 mb-2"
+              className="img-fluid w-100 h-md-50 h-auto p-2 mb-2"
               alt="carrot"
             />
             <h5
@@ -54,38 +58,48 @@ export default function Monitoring() {
             >
               Carrots Need Full Sun
             </h5>
-            <br />
             <p className="mt-2 fs-5 px-2">
               Ensure that your carrots have full sun. Carrots do best under full
               sun. Carrot plants can survive partial shade but direct sunlight
               is always ideal.
             </p>
           </div>
-          <div className="col-md-8 mt-4">
+          <div className="col-md-7">
             {details &&
-              details.length > 0 &&
               details.map((items, index) => {
                 return (
-                  <div
-                    key={index}
-                    className="card d-flex align-items-center justify-content-between bg-dull border-0 m-3 w-100"
-                  >
-                    <div className="card-body">
-                      <h4 className="card-title fw-bolder">{items.title}</h4>
-                      <h6 className="card-subtitle mb-2">{items.week}</h6>
-                      <p className="card-text text-muted">
-                        {items.description}
-                      </p>
-                    </div>
-                    <img
-                      src={items.img}
-                      className="img-fluid p-2"
-                      style={{ height: "75px", width: "75px" }}
-                      alt="prune"
-                    />
+                  <div key={index} className="card bg-dull border-0 m-3">
+                    <Link
+                      to={items.link}
+                      className="text-dark"
+                      style={{ textDecoration: "none" }}
+                    >
+                      <div className="card-body d-flex align-items-center justify-content-between">
+                        <div>
+                          <h4 className="card-title fw-bolder">
+                            {items.title}
+                          </h4>
+                          <h6 className="card-subtitle mb-2">{items.week}</h6>
+                          <p className="card-text text-muted">
+                            {items.description}
+                          </p>
+                        </div>
+                        <img
+                          src={items.img}
+                          className="img-fluid"
+                          style={{ height: "75px", width: "75px" }}
+                          alt="prune"
+                        />
+                      </div>
+                    </Link>
                   </div>
                 );
               })}
+            <div className="d-grid m-3">
+              <button className="btn btn-primary text-end" type="button">
+                Next
+              </button>
+            </div>
           </div>
         </div>
       </div>
