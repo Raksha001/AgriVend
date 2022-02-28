@@ -25,9 +25,9 @@ export default function Login() {
         >
           <div className="row">
             <div className="d-flex col-md-6 align-justify-center">
-              <div className="row m-5">
+              <div className="row m-md-5 m-2">
                 <h1
-                  className="fw-bold text-center mb-5 text-primary"
+                  className="fw-bold text-center mb-md-5 mb-3 text-primary"
                   style={{ letterSpacing: "0.4rem" }}
                 >
                   AGRIVEND
