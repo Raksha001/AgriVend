@@ -1,6 +1,7 @@
 import React from "react";
 import LFarm from "../assets/images/login-farm.png";
 import bg from "../assets/images/bg.png";
+import { Link } from "react-router-dom";
 
 export default function SignUp() {
   return (
@@ -93,12 +94,18 @@ export default function SignUp() {
                   Confirm Password
                 </label>
               </div>
-              <div className="d-grid">
+              <div className="d-grid w-100">
                 <button
                   className="btn btn-primary fw-bold text-start"
                   type="button"
                 >
-                  Sign Up
+                  <Link
+                    to="/about"
+                    className="text-white"
+                    style={{ textDecoration: "none" }}
+                  >
+                    Sign Up
+                  </Link>
                 </button>
               </div>
             </div>
