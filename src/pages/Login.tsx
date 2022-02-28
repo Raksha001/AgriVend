@@ -7,35 +7,33 @@ export default function Login() {
   return (
     <>
       <section
-        className="d-flex align-justify-center"
+        className="d-flex align-justify-center vh-100"
         style={{
           background: `url("${bg}")no-repeat center/cover`,
-          height: "100vh",
-          width: "100%",
         }}
       >
         <div
-          className="bg-white"
+          className="bg-white align-items-center h-75"
           style={{
-            minHeight: "75vh",
+            minHeight: "85vh",
             width: "85%",
             borderRadius: "10px",
             boxShadow:
               "0 8px 16px 0 rgba(0, 0, 0, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.16)",
           }}
         >
-          <div className="row">
+          <div className="row h-100">
             <div className="d-flex col-md-6 align-justify-center">
               <div className="row m-md-5 m-2">
                 <h1
-                  className="fw-bold text-center mb-md-5 mb-3 text-primary"
+                  className="fw-bold mb-md-5 mb-3 text-primary text-center text-md-start reemkufi"
                   style={{ letterSpacing: "0.4rem" }}
                 >
                   AGRIVEND
                 </h1>
-                <h4 className="text-primary">Login</h4>
+                <h4 className="text-primary raleway-r mb-4">Login</h4>
                 <br />
-                <div className="form-floating mb-3">
+                <div className="form-floating mb-3 raleway-b">
                   <input
                     type="text"
                     className="form-control border-0 bg-dull"
@@ -47,10 +45,10 @@ export default function Login() {
                     htmlFor="floatingUsername"
                     className="text-primary mx-2 fw-bold"
                   >
-                    Username
+                    User Name
                   </label>
                 </div>
-                <div className="form-floating">
+                <div className="form-floating raleway-b">
                   <input
                     type="password"
                     className="form-control border-0 bg-dull"
@@ -65,7 +63,7 @@ export default function Login() {
                     Password
                   </label>
                 </div>
-                <p className="mt-2 fs-7 fw-bold text-primary text-end">
+                <p className="mt-2 fs-7 fw-bold text-primary text-end raleway-b">
                   <Link
                     to="/signup"
                     className="text-primary"
@@ -74,9 +72,9 @@ export default function Login() {
                     Create an Account
                   </Link>
                 </p>
-                <div className="d-grid">
+                <div className="raleway-b">
                   <button
-                    className="btn btn-primary fw-bold text-start"
+                    className="btn btn-primary fw-bold text-center w-md-25"
                     type="button"
                   >
                     <Link
