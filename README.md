@@ -1,4 +1,4 @@
-## **Design Heist**
+## **Design Heist - AgriTech Domain**
 
 ### **AgriVend**
 
@@ -21,10 +21,11 @@
 
 This is a farm Management site where as farmers you can know when to soil and when to toil by using the best features provided right from selling to buying as well.
 
-##### **Tech stack used**
+#### **Tech stack used**
 
-- TypeScript - Frontend
+- React JS with TypeScript - Frontend
 - Bootstrap and React Bootstrap - UI Framework
+- Sass - Css Framework
 
 #### **License**
 
