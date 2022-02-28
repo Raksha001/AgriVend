@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 const details = [
   {
-    link: "/about",
+    link: "/prune",
     title: "Pruning Plants",
     week: "1 week",
     description: "Prune Correctly",
@@ -68,7 +68,10 @@ export default function Monitoring() {
             {details &&
               details.map((items, index) => {
                 return (
-                  <div key={index} className="card bg-dull border-0 m-3">
+                  <div
+                    key={index}
+                    className="card shadow-1 bg-dull border-0 m-3"
+                  >
                     <Link
                       to={items.link}
                       className="text-dark"
