@@ -8,6 +8,7 @@ import Monitoring from "./pages/PlantCare/Monitoring";
 import Pruning from "./pages/PlantCare/Pruning";
 import Plantcare from "./pages/PlantCare/Plantcare";
 import Inspection from "./pages/PlantCare/Inspection";
+import Error404 from "./pages/Error404";
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
         <Route path="/prune" element={<Pruning />} />
         <Route path="/plantcare" element={<Plantcare />} />
         <Route path="/inspect" element={<Inspection />} />
+        <Route path="/error404" element={<Error404 />} />
       </Routes>
     </BrowserRouter>
   );
