@@ -1,9 +1,6 @@
 import React from "react";
 import Layout from "../../components/Layout";
 import Carrot from "../../assets/images/carrot.png";
-import Prune from "../../assets/images/prune.png";
-import Inspect from "../../assets/images/inspect.png";
-import Sell from "../../assets/images/sell.png";
 import Droplet from "../../assets/images/droplet.png";
 import Seed from "../../assets/images/seed.png";
 import Temp from "../../assets/images/temp.png";
@@ -16,23 +13,23 @@ const details = [
       "Carrots can tolerate a wide range of soil temperatures and can even survive a light frost. The ideal soil temperature for carrots is between 50 and 85°F. In most climates, the ideal season for planting carrot seeds is early spring.",
   },
   {
-    title: "Carrots need full sun",
+    title: "Carrots need full sun.",
     description:
       "Ensure that your carrots have full sun. Carrots do best under full sun. Carrot plants can survive partial shade but direct sunlight is always ideal.",
   },
   {
-    title: "Look for soft, permeable soil.",
+    title: "Look for soft, Permeable soil.",
     description:
-      "solid can cause carrot roots to fork and deform. Planting radish seeds with your carrot seeds is a great way to loosen up the soil.Carrots are not suited for acidic soil and do best when planted in a garden with a soil pH between 6.0 and 6.8. ",
+      "Solid can cause carrot roots to fork and deform. Planting radish seeds with your carrot seeds is a great way to loosen up the soil.Carrots are not suited for acidic soil and do best when planted in a garden with a soil pH between 6.0 and 6.8. ",
   },
 ];
 
-export default function Plantdescription() {
+export default function Pruning() {
   return (
     <Layout>
       <div className="container-fluid">
-        <div className="row">
-          <div className="col-md-4 mt-4">
+        <div className="row mt-4">
+          <div className="col-md-5">
             <h1
               className="fw-bold px-2 text-primary mb-2"
               style={{ letterSpacing: "0.2rem" }}
@@ -41,39 +38,19 @@ export default function Plantdescription() {
             </h1>
             <img
               src={Carrot}
-              className="img-fluid w-md-75 w-100 h-md-50 h-auto p-2 mb-2"
+              className="img-fluid p-md-4 p-2 mb-2"
               alt="carrot"
             />
-            <div className="d-flex">
+            <div className="d-md-flex">
               <div className="container">
-                <div className="d-flex">
+                <div className="d-flex align-jusify-center">
                   <img
                     src={Droplet}
                     className="img-fluid p-2"
                     style={{ height: "75px", width: "75px" }}
                     alt="prune"
                   />
-                  <p className="mt-2 py-2 fs-5 px-2">1-2inch/week</p>
-                </div>
-                <div className="d-flex">
-                  <img
-                    src={Seed}
-                    className="img-fluid p-2"
-                    style={{ height: "75px", width: "75px" }}
-                    alt="prune"
-                  />
-                  <p className="mt-2 py-2 fs-5 px-2">Soft, permeable soil</p>
-                </div>
-              </div>
-              <div className="container">
-                <div className="d-flex">
-                  <img
-                    src={Sunlight}
-                    className="img-fluid p-2"
-                    style={{ height: "75px", width: "75px" }}
-                    alt="prune"
-                  />
-                  <p className="mt-2 py-2 fs-5 px-2">Direct sunlight</p>
+                  <p className="mt-2 fs-5 p-2">1 - 2 inch/week</p>
                 </div>
                 <div className="d-flex">
                   <img
@@ -82,14 +59,34 @@ export default function Plantdescription() {
                     style={{ height: "75px", width: "75px" }}
                     alt="prune"
                   />
-                  <p className="mt-2 py-2 fs-5 px-2">50-85°F</p>
+                  <p className="mt-2 p-2 fs-5">50-85°F</p>
+                </div>
+              </div>
+              <div className="container">
+                <div className="d-flex">
+                  <img
+                    src={Seed}
+                    className="img-fluid p-2"
+                    style={{ height: "75px", width: "75px" }}
+                    alt="prune"
+                  />
+                  <p className="mt-2 fs-5 p-1">Soft, permeable soil</p>
+                </div>
+                <div className="d-flex">
+                  <img
+                    src={Sunlight}
+                    className="img-fluid p-2"
+                    style={{ height: "75px", width: "75px" }}
+                    alt="prune"
+                  />
+                  <p className="mt-2 p-2 fs-5">Direct Sunlight</p>
                 </div>
               </div>
             </div>
           </div>
-          <div className="col-md-8 mt-4">
+          <div className="col-md-7">
             <h4
-              className="fw-bold px-2 text-primary mb-2"
+              className="fw-bold px-2 mt-md-0 mt-4 text-primary mb-2"
               style={{ letterSpacing: "0.2rem" }}
             >
               PRUNING
@@ -100,10 +97,10 @@ export default function Plantdescription() {
                 return (
                   <div
                     key={index}
-                    className="card rounded d-flex align-items-center justify-content-between bg-dull border-0 m-3 w-100 shadow p-3 mb-5 bg-white rounded"
+                    className="card border-0 shadow-1 p-2 my-3 rounded-3"
                   >
                     <div className="card-body">
-                      <h4 className="card-title fw-bolder">{items.title}</h4>
+                      <h4 className="card-title fw-bold">{items.title}</h4>
                       <p className="card-text text-muted">
                         {items.description}
                       </p>
