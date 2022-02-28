@@ -6,7 +6,6 @@ import About from "./pages/About";
 import Monitoring from "./pages/PlantCare/Monitoring";
 import Pruning from "./pages/PlantCare/Pruning";
 import Plantcare from "./pages/PlantCare/Plantcare";
-import Plantdescription from "./pages/PlantCare/Plantdescription";
 import Inspection from "./pages/PlantCare/Inspection";
 
 export default function App() {
@@ -18,7 +17,6 @@ export default function App() {
         <Route path="/monitor" element={<Monitoring />} />
         <Route path="/prune" element={<Pruning />} />
         <Route path="/plantcare" element={<Plantcare />} />
-        <Route path="/plantdescription" element={<Plantdescription />} />
         <Route path="/inspect" element={<Inspection />} />
       </Routes>
     </BrowserRouter>
