@@ -13,6 +13,32 @@ $theme-colors: (
 @import "~bootstrap/scss/bootstrap.scss";
 @import "../fonts/fonts.css";
 
+/* Font classes start */
+.poppins-r {
+  font-family: "Poppins";
+}
+.poppins-m {
+  font-family: "Poppins";
+  font-weight: 500;
+}
+.poppins-b {
+  font-family: "Poppins";
+  font-weight: bold;
+}
+
+.raleway-r {
+  font-family: "Raleway";
+}
+.raleway-b {
+  font-family: "Raleway";
+  font-weight: bold;
+}
+
+.reemkufi {
+  font-family: "Reem Kufi";
+}
+/* Font classes end */
+
 .vh-100 {
   min-height: 100vh;
 }
