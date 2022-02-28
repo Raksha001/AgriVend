@@ -25,7 +25,7 @@ export default function NavBar() {
             <Nav className="ms-auto fw-bold">
               <Nav.Link href="/about">HOME</Nav.Link>
               <Nav.Link href="/plantcare">PLANT CARE</Nav.Link>
-              <Nav.Link href="#">SELL</Nav.Link>
+              <Nav.Link href="/sell">SELL</Nav.Link>
               <Nav.Link href="/">SIGN OUT</Nav.Link>
             </Nav>
           </Navbar.Collapse>

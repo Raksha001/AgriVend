@@ -22,7 +22,7 @@ const details = [
     img: Inspect,
   },
   {
-    link: "/about",
+    link: "/sell",
     title: "Sell",
     week: "3 weeks",
     description: "Fast Growth",

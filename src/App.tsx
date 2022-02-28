@@ -8,6 +8,7 @@ import Monitoring from "./pages/PlantCare/Monitoring";
 import Pruning from "./pages/PlantCare/Pruning";
 import Plantcare from "./pages/PlantCare/Plantcare";
 import Inspection from "./pages/PlantCare/Inspection";
+import Error404 from "./pages/Error404";
 import Sell from "./pages/PlantCare/Sell";
 import Completed from "./pages/Completed";
 
@@ -22,6 +23,7 @@ export default function App() {
         <Route path="/prune" element={<Pruning />} />
         <Route path="/plantcare" element={<Plantcare />} />
         <Route path="/inspect" element={<Inspection />} />
+        <Route path="/error404" element={<Error404 />} />
         <Route path="/sell" element={<Sell />} />
         <Route path="/completed" element={<Completed />} />
       </Routes>
