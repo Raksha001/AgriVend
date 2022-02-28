@@ -46,29 +46,28 @@ export default function Plantcare() {
     <Layout>
       <div className="container-fluid">
         <h1
-          className="fw-bold px-2 py-5 text-primary mb-2"
+          className="fw-bold px-2 py-5 text-primary mb-2 raleway-b"
           style={{ letterSpacing: "0.2rem" }}
         >
           Choose a plant that you want to grow
         </h1>
         <div className="container my-4">
           <div className="row">
-            {details &&
-              details.length > 0 &&
+            {details.length &&
               details.map((items, index) => {
                 return (
                   <div className="col-md-4">
-                    <div
-                      key={index}
-                      className="card rounded-3 d-flex align-items-center justify-content-between bg-dull border-0 m-3 w-100 h-75 shadow p-3 mb-5 bg-white rounded"
+                    <Link
+                      to={items.link}
+                      className="text-dark"
+                      style={{ textDecoration: "none" }}
                     >
-                      <Link
-                        to={items.link}
-                        className="text-dark"
-                        style={{ textDecoration: "none" }}
+                      <div
+                        key={`${items}-${index}`}
+                        className="card rounded-3 d-flex align-items-center border-0 w-100 h-75 shadow p-3 mb-5 bg-white rounded"
                       >
-                        <div className="d-flex align-items-center justify-content-between">
-                          <h1 className="card-title fw-bolder mt-2 py-5 mb-2 fs-5 px-2">
+                        <div className="d-flex align-items-center justify-content-between w-100">
+                          <h1 className="card-title fw-bolder mt-2 py-5 mb-2 fs-5 px-2 poppins-b ">
                             {items.title}
                           </h1>
                           <img
@@ -82,8 +81,8 @@ export default function Plantcare() {
                             alt="plant"
                           />
                         </div>
-                      </Link>
-                    </div>
+                      </div>
+                    </Link>
                   </div>
                 );
               })}
