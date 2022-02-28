@@ -14,7 +14,7 @@ export default function NavBar() {
       >
         <Container fluid>
           <Navbar.Brand
-            className="text-white fs-3 fw-bolder"
+            className="text-white fs-3 fw-bolder reemkufi"
             style={{ letterSpacing: "0.4rem" }}
             href="#home"
           >
